@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Stream</title>
+</head>
+<body>
+    <img id="video-stream" src="" alt="Video Stream">
+    <script>
+        const videoElement = document.getElementById('video-stream');
+
+        // Function to update the video frame
+        function updateVideoFrame() {
+            videoElement.src = "http://127.0.0.1:5000/video_feed";
+        }
+
+        // Set an interval to update the video frame periodically (e.g., every 100 milliseconds)
+        setInterval(updateVideoFrame, 100);
+    </script>
+</body>
+</html>
